@@ -1,0 +1,14 @@
+package com.example.recyclevapp;
+
+public class myData {
+
+    static String[] nameArray = {"Goku", "Vegeta", "Piccolo", "Gohan", "Krillin", "Bulma", "Frieza", "Majin Buu", "Trunks", "Android 18"};
+    static String[] versionArray = {"Hero of the series, Saiyan fighter.", "Saiyan prince, Goku's rival.", "Loyal hero, Goku's close friend.", "Goku's son, wise and sensitive.", "Goku's close friend, skilled fighter.", "Smart scientist, Goku's close friend.", "Tyrannical emperor, major villain.", "Destructive creature, evil force.", "Vegeta's son, Saiyan fighter.", "Android, powerful fighter."};
+
+    static Integer[] drawableArray = {R.drawable.goku, R.drawable.vegeta, R.drawable.piccolo,
+            R.drawable.gohan, R.drawable.krillin, R.drawable.bulma,
+            R.drawable.frieza, R.drawable.majinbuu, R.drawable.trunks,R.drawable.android18};
+
+    static Integer[] id_ = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+}
