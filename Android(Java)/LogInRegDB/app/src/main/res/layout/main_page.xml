@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.MainPage">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/editTextEmailAddressAtMainPage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:textSize="24sp"
+        android:ems="10"
+        android:hint="Type your email"
+        android:inputType="textEmailAddress" />
+
+
+    <EditText
+        android:id="@+id/editTextPasswordAtMainPage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:textSize="24sp"
+        android:ems="10"
+        android:hint="Type your password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/LoginButtonFromMainPageToAfterLoginPage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:text="Login"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/RegisterButtonFromMainPageToRegisterPage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:text="Register"
+        android:textSize="32sp" />
+
+</LinearLayout>

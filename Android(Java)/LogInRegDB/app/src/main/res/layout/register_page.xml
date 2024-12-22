@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.RegisterPage">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/editTextEmailAddressAtRegisterPage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:textSize="24sp"
+        android:ems="10"
+        android:hint="Type your email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextPasswordAtRegisterPage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:textSize="24sp"
+        android:ems="10"
+        android:hint="Type your password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editTextRePasswordAtRegisterPage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:textSize="24sp"
+        android:ems="10"
+        android:hint="Type your password again"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:textSize="24sp"
+        android:hint="Type your UserName"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:textSize="24sp"
+        android:ems="10"
+        android:hint="Type your phone number"
+        android:inputType="phone" />
+
+
+    <Button
+        android:id="@+id/RegisterButtonFromRegisterPageToMainPage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:textSize="24sp"
+        android:text="Register" />
+
+
+</LinearLayout>

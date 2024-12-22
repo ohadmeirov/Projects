@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundblueclear"
+    android:gravity="top|start"
+    android:orientation="vertical"
+    tools:context=".fragments.AfterLoginPage">
+
+    <TextView
+        android:id="@+id/textViewOfUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text="Title"
+        android:textColor="#0003B3"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/textViewSelectedProductTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text="Selected Product:"
+        android:textColor="#9ABB0A"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/textViewNameOfProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="Bitcoin"
+        android:textColor="#900003"
+        android:textSize="30sp"
+        android:typeface="monospace" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBitcoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:contentDescription="Bitcoin"
+        android:src="@drawable/bitcoin" />
+
+    <TextView
+        android:id="@+id/textViewChooseQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Choose how much you would like to add:"
+        android:textColor="#FF5733"
+        android:textSize="25sp"
+        android:typeface="monospace"
+        android:layout_marginTop="26dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonMinus"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:text="-"
+            android:textSize="24sp"
+            android:backgroundTint="#FF6666"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:radius="16dp" />
+
+        <TextView
+            android:id="@+id/textViewCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:text="0"
+            android:layout_marginTop="12dp"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonPlus"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:text="+"
+            android:backgroundTint="#66DF66"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:radius="16dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewAddToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Add product to cart  "
+            android:textColor="#3399FF"
+            android:textSize="22sp"
+            android:typeface="monospace"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/buttonAddPlus"
+            android:text="+"
+            android:textSize="22sp"
+            android:backgroundTint="#0033FF"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:radius="25dp"
+            android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
