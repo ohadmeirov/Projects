@@ -1,2 +1,0 @@
-C:\Users\ohadm\OneDrive\שולחן העבודה\Ex02 Ohad 214243016 Tomer 206530263\Ex03.ConsoleUI\obj\Debug\Ex03.ConsoleUI.csproj.AssemblyReference.cache
-C:\Users\ohadm\OneDrive\שולחן העבודה\Ex02 Ohad 214243016 Tomer 206530263\Ex03.ConsoleUI\obj\Debug\Ex03.ConsoleUI.csproj.CoreCompileInputs.cache
