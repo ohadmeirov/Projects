@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cloudsbackground"
+    android:orientation="vertical"
+    tools:context=".fragments.startLogRegFragments.MainPage">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="207dp"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="Just before we start..\nWe need you to be a registered user to get all the recommended travel guides we have!
+\nAlready registered? Log in!"
+        android:textColor="#004BBB"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editTextEmailAddressAtMainPage"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_rounded_background"
+        android:ems="10"
+        android:hint="Type your email"
+        android:textColorHint="#A9A9A9"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+
+    <EditText
+        android:id="@+id/editTextPasswordAtMainPage"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_rounded_background"
+        android:ems="10"
+        android:hint="Type your password"
+        android:textColorHint="#A9A9A9"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/LoginButtonFromMainPageToAfterLoginPage"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#4682B4"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/RegisterButtonFromMainPageToRegisterPage"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#4682B4"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp" />
+
+</LinearLayout>
+

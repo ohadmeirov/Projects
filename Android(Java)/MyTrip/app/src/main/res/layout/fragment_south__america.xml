@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextSearchSouthAmerica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search..."
+            android:padding="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textViewSouthAmerica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="South America"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="#8F3F0B"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="20dp" />
+
+        <ImageView
+            android:id="@+id/imageSouthAmerica"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/southamerica"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewSouthAmerica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textAboutSouthAmerica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F0F8FF"
+            android:lineSpacingExtra="6dp"
+            android:padding="16dp"
+            android:text="         A few words about the continent:\n\nSouth America is a continent rich in biodiversity, home to the Amazon Rainforest, the Andes Mountains, and cities like Rio de Janeiro and Buenos Aires."
+            android:textColor="#8F3F0B"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "634427982964",
+    "project_id": "projectonefirebase-cc95e",
+    "storage_bucket": "projectonefirebase-cc95e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634427982964:android:7ee2e0f2e0a797730dbd21",
+        "android_client_info": {
+          "package_name": "com.example.MyTrip"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvj45V0vRDRhLIWs0a7u_JUclRWFQoMb0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

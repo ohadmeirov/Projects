@@ -1,0 +1,62 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fillViewport="true"
+tools:context=".fragments.countriesFragments.FranceFragment">
+
+<LinearLayout
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewFrance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="France"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#80CFF6"
+        android:layout_gravity="center"
+        android:padding="10dp" />
+
+    <ImageView
+        android:id="@+id/imageFrance"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/francewaveflag" />
+
+    <EditText
+        android:id="@+id/editTextDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the number of days (1-7)"
+        android:inputType="number"
+        android:maxLength="1"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/buttonShowTrips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Trip Ideas"
+        android:backgroundTint="#80B0F6"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewFrance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF" />
+
+</LinearLayout>
+</ScrollView>

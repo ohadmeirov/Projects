@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextSearchNorthAmerica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search..."
+            android:padding="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textViewNorthAmerica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="North America"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="#0066FF"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="20dp" />
+
+        <ImageView
+            android:id="@+id/imageNorthAmerica"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/northamerica"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewNorthAmerica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textAboutNorthAmerica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F0F8FF"
+            android:lineSpacingExtra="6dp"
+            android:padding="16dp"
+            android:text="         A few words about the continent:\n\nNorth America includes Canada, the United States, and Mexico, and is known for its diverse landscapes, from the icy Arctic to the deserts of the Southwest and the lush rainforests of Central America."
+            android:textColor="#0F66FF"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

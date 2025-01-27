@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextSearchAustralia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search..."
+            android:padding="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textViewAustralia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Australia"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="#4682B4"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="20dp" />
+
+        <ImageView
+            android:id="@+id/imageAustralia"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/australia"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewAustralia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textAboutAustralia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F0F8FF"
+            android:lineSpacingExtra="6dp"
+            android:padding="16dp"
+            android:text="    A few words about the continent:\n\nAustralia is both a country and a continent, known for its unique wildlife, the Great Barrier Reef, and landmarks like Sydney Opera House and Uluru. It is the world's smallest continent."
+            android:textColor="#4682B4"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress NavigationFile, NavigationFile -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/openPage">
+
+    <fragment
+        android:id="@+id/fragmentOne"
+        android:name="com.example.MyTrip.fragments.startLogRegFragments.MainPage"
+        android:label="fragment_one"
+        tools:layout="@layout/main_page" >
+        <action
+            android:id="@+id/action_mainPage_to_registerPage"
+            app:destination="@id/fragmentTwo" />
+        <action
+            android:id="@+id/action_mainPage_to_AfterLoginPage"
+            app:destination="@id/fragmentThree" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTwo"
+        android:name="com.example.MyTrip.fragments.startLogRegFragments.RegisterPage"
+        android:label="fragment_two"
+        tools:layout="@layout/register_page" >
+        <action
+            android:id="@+id/action_registerPage_to_mainPage"
+            app:destination="@id/fragmentOne" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentThree"
+        android:name="com.example.MyTrip.fragments.startLogRegFragments.AfterLoginPage"
+        android:label="fragment_three"
+        tools:layout="@layout/after_login_page" >
+        <action
+            android:id="@+id/action_fragmentThree_to_africaFragment"
+            app:destination="@id/africaFragment" />
+        <action
+            android:id="@+id/action_fragmentThree_to_asiaFragment"
+            app:destination="@id/asiaFragment" />
+        <action
+            android:id="@+id/action_fragmentThree_to_north_AmericaFragment"
+            app:destination="@id/north_AmericaFragment" />
+        <action
+            android:id="@+id/action_fragmentThree_to_south_AmericaFragment"
+            app:destination="@id/south_AmericaFragment" />
+        <action
+            android:id="@+id/action_fragmentThree_to_australiaFragment"
+            app:destination="@id/australiaFragment" />
+        <action
+            android:id="@+id/action_fragmentThree_to_europeFragment"
+            app:destination="@id/europeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/openPage"
+        android:name="com.example.MyTrip.fragments.startLogRegFragments.OpenPage"
+        android:label="fragment_open_page"
+        tools:layout="@layout/openpage" >
+        <action
+            android:id="@+id/action_openPage_to_fragmentOne"
+            app:destination="@id/fragmentOne" />
+        <action
+            android:id="@+id/action_openPage_to_aboutUsFragment"
+            app:destination="@id/aboutMeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutMeFragment"
+        android:name="com.example.MyTrip.fragments.startLogRegFragments.AboutMeFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_me" >
+        <action
+            android:id="@+id/action_aboutUsFragment_to_openPage"
+            app:destination="@id/openPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/asiaFragment"
+        android:name="com.example.MyTrip.fragments.continentsFragments.AsiaFragment"
+        android:label="fragment_asia"
+        tools:layout="@layout/fragment_asia" />
+    <fragment
+        android:id="@+id/north_AmericaFragment"
+        android:name="com.example.MyTrip.fragments.continentsFragments.North_AmericaFragment"
+        android:label="fragment_north__america"
+        tools:layout="@layout/fragment_north__america" />
+    <fragment
+        android:id="@+id/south_AmericaFragment"
+        android:name="com.example.MyTrip.fragments.continentsFragments.South_AmericaFragment"
+        android:label="fragment_south__america"
+        tools:layout="@layout/fragment_south__america" />
+    <fragment
+        android:id="@+id/australiaFragment"
+        android:name="com.example.MyTrip.fragments.continentsFragments.AustraliaFragment"
+        android:label="fragment_australia"
+        tools:layout="@layout/fragment_australia" />
+    <fragment
+        android:id="@+id/africaFragment"
+        android:name="com.example.MyTrip.fragments.continentsFragments.AfricaFragment"
+        android:label="fragment_africa"
+        tools:layout="@layout/fragment_africa" />
+    <fragment
+        android:id="@+id/europeFragment"
+        android:name="com.example.MyTrip.fragments.continentsFragments.EuropeFragment"
+        android:label="fragment_europe"
+        tools:layout="@layout/fragment_europe" >
+        <action
+            android:id="@+id/action_europeFragment_to_franceFragment"
+            app:destination="@id/franceFragment" />
+        <action
+            android:id="@+id/action_europeFragment_to_czechRepublicFragment"
+            app:destination="@id/czechRepublicFragment" />
+        <action
+            android:id="@+id/action_europeFragment_to_hungaryFragment"
+            app:destination="@id/hungaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/franceFragment"
+        android:name="com.example.MyTrip.fragments.countriesFragments.FranceFragment"
+        android:label="fragment_france"
+        tools:layout="@layout/fragment_france" />
+    <fragment
+        android:id="@+id/czechRepublicFragment"
+        android:name="com.example.MyTrip.fragments.countriesFragments.CzechRepublicFragment"
+        android:label="fragment_czech_republic"
+        tools:layout="@layout/fragment_czech_republic" />
+    <fragment
+        android:id="@+id/hungaryFragment"
+        android:name="com.example.MyTrip.fragments.countriesFragments.HungaryFragment"
+        android:label="fragment_hungary"
+        tools:layout="@layout/fragment_hungary" />
+</navigation>

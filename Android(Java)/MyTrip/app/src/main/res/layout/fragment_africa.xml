@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextSearchAfrica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search..."
+            android:padding="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/textViewAfrica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Africa"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="#FFA500"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="20dp" />
+
+        <ImageView
+            android:id="@+id/imageAfrica"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/africa"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewAfrica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textAboutAfrica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F0F8FF"
+            android:lineSpacingExtra="6dp"
+            android:padding="16dp"
+            android:text="         A few words about the continent:\n\n Africa is the second-largest continent, home to a diverse range of cultures, languages, and wildlife. From the Sahara Desert to the tropical rainforests, Africa offers a variety of experiences. Major landmarks include the Pyramids of Egypt, Mount Kilimanjaro, and the Serengeti."
+            android:textColor="#FFA500"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

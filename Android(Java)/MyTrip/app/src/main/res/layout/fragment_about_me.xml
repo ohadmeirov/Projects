@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F4F8"
+    android:padding="16dp"
+    tools:context=".fragments.startLogRegFragments.AboutMeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Who Am I?"
+                android:textColor="#0066CC"
+                android:textSize="28sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/textViewAboutMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="So...\n\nMy name is Ohad, and in recent years I have traveled quite a bit around the world, especially in Europe. Over time, during my travels, I discovered the need to plan the trip well in advance, to the point of planning in detail hours, minutes and days, with advance ticket purchases and route planning.\n\nI discovered that this makes the trip much easier and also makes you accomplish much more than you initially wanted, and of course be in all the recommended places! I always wanted to have a detailed guide on what to do wherever I was, but I never had one, so I decided to pick up the gauntlet and do it myself.\n\nSo what are you waiting for?\nStart searching for the information you want about your destination in my app!"
+                android:textColor="#333333"
+                android:textSize="19sp"
+                android:lineSpacingMultiplier="1.3"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/BackFromAboutMePage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#0099FF"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:elevation="4dp"
+        android:stateListAnimator="@null"/>
+
+</LinearLayout>
