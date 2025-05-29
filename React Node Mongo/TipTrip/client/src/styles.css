@@ -1,0 +1,16 @@
+h1 {
+    text-shadow: 2px 2px 8px #21CBF3;
+    font-family: 'MyCustomFont', Arial, sans-serif;
+}
+.card-list {
+    column-count: 2;
+    column-gap: 24px;
+}
+.card {
+    border-radius: 16px;
+    transition: box-shadow 0.3s;
+}
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('./fonts/MyCustomFont.woff2') format('woff2');
+}
