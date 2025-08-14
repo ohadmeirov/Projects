@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.triangularproject.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Label text="Write down (X,Y):"/>
+    <GridPane hgap="10" vgap="10">
+        <Label text="Point 1:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="x1Field" promptText="X1" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        <TextField fx:id="y1Field" promptText="Y1" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+
+        <Label text="Point 2:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField fx:id="x2Field" promptText="X2" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+        <TextField fx:id="y2Field" promptText="Y2" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+
+        <Label text="Point 3:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <TextField fx:id="x3Field" promptText="X3" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        <TextField fx:id="y3Field" promptText="Y3" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+    </GridPane>
+    <Button text="ShowTriangle" onAction="#onShowTriangleButtonClick"/>
+</VBox>
