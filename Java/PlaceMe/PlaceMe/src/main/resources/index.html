@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Reservation System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        .panel {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #response {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Restaurant Reservation System</h1>
+    
+    <div class="container">
+        <div class="panel">
+            <h3>Make Reservation</h3>
+            <textarea id="reservationJson" rows="10" cols="50">{
+    "customer": {
+        "name": "John Doe",
+        "numberOfGuests": 4,
+        "timeToCome": "19:00",
+        "dayToCome": "MONDAY"
+    },
+    "restaurant": {
+        "name": "Restaurant Name",
+        "openingHour": 9,
+        "closingHour": 22
+    },
+    "timeSlot": "19:00",
+    "dayOfWeek": "MONDAY",
+    "strategyType": "OPTIMIZED"
+}</textarea>
+            <button onclick="makeReservation()">Make Reservation</button>
+            <div id="reservationResponse" class="response"></div>
+        </div>
+        
+        <div class="panel">
+            <h3>Cancel Reservation</h3>
+            <textarea id="cancelJson" rows="10" cols="50">{
+    "customer": {
+        "name": "John Doe",
+        "numberOfGuests": 4,
+        "timeToCome": "19:00",
+        "dayToCome": "MONDAY"
+    },
+    "restaurant": {
+        "name": "Restaurant Name",
+        "openingHour": 9,
+        "closingHour": 22
+    },
+    "timeSlot": "19:00",
+    "dayOfWeek": "MONDAY"
+}</textarea>
+            <button onclick="cancelReservation()">Cancel Reservation</button>
+            <div id="cancelResponse" class="response"></div>
+        </div>
+        
+        <div class="panel">
+            <h3>Join Waitlist</h3>
+            <textarea id="waitlistJson" rows="10" cols="50">{
+    "customer": {
+        "name": "John Doe",
+        "numberOfGuests": 4,
+        "timeToCome": "19:00",
+        "dayToCome": "MONDAY"
+    },
+    "restaurant": {
+        "name": "Restaurant Name",
+        "openingHour": 9,
+        "closingHour": 22
+    },
+    "timeSlot": "19:00",
+    "dayOfWeek": "MONDAY"
+}</textarea>
+            <button onclick="joinWaitlist()">Join Waitlist</button>
+            <div id="waitlistResponse" class="response"></div>
+        </div>
+    </div>
+    
+    <div id="response"></div>
+
+    <script>
+        const SERVER_URL = 'http://localhost:34567';
+        
+        async function sendRequest(endpoint, method, body = null) {
+            try {
+                const options = {
+                    method: method,
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                };
+                
+                if (body) {
+                    options.body = body;
+                }
+                
+                const response = await fetch(`${SERVER_URL}/${endpoint}`, options);
+                const data = await response.json();
+                document.getElementById('response').textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                document.getElementById('response').textContent = `Error: ${error.message}`;
+            }
+        }
+        
+        function makeReservation() {
+            const body = document.getElementById('reservationJson').value;
+            sendRequest('reservation/reserve', 'POST', body);
+        }
+        
+        function cancelReservation() {
+            const body = document.getElementById('cancelJson').value;
+            sendRequest('reservation/cancel', 'POST', body);
+        }
+        
+        function joinWaitlist() {
+            const body = document.getElementById('waitlistJson').value;
+            sendRequest('reservation/waitlist', 'POST', body);
+        }
+    </script>
+</body>
+</html>

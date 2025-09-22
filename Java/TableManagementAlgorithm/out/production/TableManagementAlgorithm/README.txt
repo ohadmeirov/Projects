@@ -1,0 +1,3 @@
+I'm still in the process of building the project. This project should eventually be software aimed at seating customers in restaurants, based on the same idea as ONTOPO.
+
+**This project is inspired by the concept behind ONTOPO - a smart system for restaurant seating management. While this project is not affiliated with ONTOPO in any way, it aims to explore similar ideas with a unique approach and implementation.**
